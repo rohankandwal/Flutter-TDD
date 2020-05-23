@@ -13,7 +13,9 @@ class GetConcreteNumberTrivia {
   GetConcreteNumberTrivia({@required this.repository});
 
   // Function to get the success or failure response from the server
-  Future<Either<Failure, NumberTrivia>> execute({@required int number}) async {
+  // call keyword makes this function to be called directly from the object of
+  // this class. eg - obj(23). We can also do the same with obj.call(23)
+  Future<Either<Failure, NumberTrivia>> call({@required int number}) async {
     return await repository.getConcreteNumberTrivia(number);
   }
 }
