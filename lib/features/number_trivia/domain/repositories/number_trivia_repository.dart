@@ -3,6 +3,9 @@ import 'package:numbertrivia/core/error/failures.dart';
 
 import '../entities/number_trivia.dart';
 
+/// Domain layer will only have the contract for the data layer.
+/// Data layer will then enforce this contract to get the data from a remote
+/// repository or local repository.
 abstract class NumberTriviaRepository {
   /// Function used to get a particular number trivia.
   /// Either is FP from dartz package, it will either give Failure or NumberTrivia
