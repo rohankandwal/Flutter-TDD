@@ -6,7 +6,7 @@ import 'package:numbertrivia/features/number_trivia/domain/entities/number_trivi
 import 'package:numbertrivia/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 
 // Usecase to get the trivia for a user-entered specific number from the server
-// or show an error. This usecase will return the date by calling
+// or show an error. This usecase will return the data by calling
 // getConcreteNumberTrivia() from the NumberTriviaRepository
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;

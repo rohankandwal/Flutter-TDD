@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:equatable/equatable.dart';
 import 'package:numbertrivia/core/error/failures.dart';
 
 // Abstract class to ensure that for each usecase, we are using the call function
@@ -12,4 +13,10 @@ abstract class UseCase<Type, Params> {
   Future<Either<Failure, Type>> call(Params param); /*{
     print(param)
 }*/
+}
+
+// Class used when we don't want to pass any parameter to the call function
+class NoParams extends Equatable {
+  @override
+  List<Object> get props => [];
 }
