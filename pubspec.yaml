@@ -33,7 +33,7 @@ dependencies:
   dartz: ^0.9.1
   # Remote API
   # For checking whether we are connected to WiFi or mobile internet
-  connectivity: ^0.4.8+6
+  data_connection_checker: ^0.3.4
   # For hitting APIs
   http: ^0.12.1
   # Local Caching of APIs
