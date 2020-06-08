@@ -9,10 +9,10 @@ import 'package:numbertrivia/features/number_trivia/domain/repositories/number_t
 // Usecase to get the trivia for a random number from the server
 // or show an error. This usecase will return the data by calling
 // getRandomNumberTrivia() from the NumberTriviaRepository
-class GetRandomTriviaRepository implements UseCase<NumberTrivia, NoParams> {
+class GetRandomNumberTrivia implements UseCase<NumberTrivia, NoParams> {
   final NumberTriviaRepository repository;
 
-  GetRandomTriviaRepository({@required this.repository});
+  GetRandomNumberTrivia({@required this.repository});
 
   // Function to get the success or failure response from the server
   // call keyword makes this function to be called directly from the object of
